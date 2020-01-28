@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Yurii Timchenko](https://up.htmlacademy.ru/htmlcss/27/user/486431).
-* Наставник: `Неизвестно`.
+- Студент: [Yurii Timchenko](https://up.htmlacademy.ru/htmlcss/27/user/486431).
+- Наставник: `Work by myself`.
 
 ---
 
