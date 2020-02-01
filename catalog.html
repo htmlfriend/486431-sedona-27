@@ -11,7 +11,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <title>map</title>
+    <title>hotels</title>
     <link rel="stylesheet" href="assets/css/style.min.css"></head>
 
 <body>
@@ -37,8 +37,114 @@
                     </li>
                 </ul>
             </nav>
-        </header>    <iframe></iframe>
-        <footer class="footer">
+        </header>    <form action="#">
+            <fieldset>
+                <legend>Инфраструктура:</legend>
+                <input type="checkbox" name="pool" value="pool">Бассейн<br>
+                <input type="checkbox" name="parking" value="parking">Парковка<br>
+                <input type="checkbox" name="wifi" value="wifi">Wi-Fi<br>
+            </fieldset>
+            <fieldset>
+                <legend>Тип жилья:</legend>
+                <input type="checkbox" name="hotel" value="hotels">Гостиница<br>
+                <input type="checkbox" name="motel" value="motel">Мотель<br>
+                <input type="checkbox" name="appartment" value="appartment">Апартаменты<br>
+            </fieldset>
+            <fieldset>
+                <legend>Стоимость в сутки (Р):</legend>
+                <div class="range__block">
+                    <table>
+                        <tr>
+                            <td>от 0</td>
+                            <td>До 3000</td>
+                        </tr>
+                    </table>
+                </div>
+                <input type="range" name="cost" id="cost" min="0" max="3000">
+            </fieldset>
+            <button type="submit">Показать</button>
+        </form>    <table border="1">
+            <thead>
+                <tr>
+                    <th>Найдено: 3</th>
+                    <th>Сортировка:</th>
+                    <th>По цене</th>
+                    <th>По типу</th>
+                    <th>По рейтингу</th>
+                    <th><button>top</button><button>bottom</button></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../assets/images/hotels/hotel-picture-full-1.jpg" width="135" height="90"
+                            alt="amara resort">
+                    </td>
+                    <td colspan="4">
+                        <div class="hotel__block">
+                            <h3 class="hotel__block-title">Amara Resort & Spa</h3>
+                            <div class="hotel__block-desc">
+                                <p class="hotel__type">Гостиница</p>
+                                <p class="hotel__price">От 4000 Р.</p>
+                            </div>
+                            <div class="hotel__block-button">
+                                <button>Подробнее</button>
+                                <button>Забронировать</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="starts">
+                            <img src="#" alt="start">
+                            <img src="#" alt="range"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../../assets/images/hotels/hotel-picture-full-2.jpg" width="135" height="90"
+                            alt="desert quail inn">
+                    </td>
+                    <td colspan="4">
+                        <div class="hotel__block">
+                            <h3 class="hotel__block-title">Desert Quail Inn</h3>
+                            <div class="hotel__block-desc">
+                                <p class="hotel__type">Мотель</p>
+                                <p class="hotel__price">От 3000 Р.</p>
+                            </div>
+                            <div class="hotel__block-button">
+                                <button>Подробнее</button>
+                                <button>Забронировать</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="starts"><img src="#" alt="start"><img src="#" alt="range"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../../assets/images/hotels/hotel-picture-full-3.jpg" width="135" height="90"
+                            alt="villas at poco diablo">
+                    </td>
+                    <td colspan="4">
+                        <div class="hotel__block">
+                            <h3 class="hotel__block-title">Villas at Poco Diablo</h3>
+                            <div class="hotel__block-desc">
+                                <p class="hotel__type">Апартаменты</p>
+                                <p class="hotel__price">От 2000 Р.</p>
+                            </div>
+                            <div class="hotel__block-button">
+                                <button>Подробнее</button>
+                                <button>Забронировать</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="starts"><img src="#" alt="start"><img src="#" alt="range"></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>    <footer class="footer">
             <div class="footer__container">
                 <div class="footer__contact">
                     <div class="footer__contact-block">
