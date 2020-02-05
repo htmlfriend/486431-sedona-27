@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 
 <head>
@@ -15,11 +15,11 @@
   <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 
-<body>
+<body class="">
   <div class="container">
     <header class="header">
       <nav class="header__menu">
-        <a href="index.html" aria-label="logo" class="header__logo">
+        <a href="index.html" aria-label="logo" tabindex="-1" class="header__logo">
           <img class="header__menu-logo" src="../../assets/images/favicon/logo-full.png" width="140" height="71"
             alt="Logo">
         </a>
@@ -112,7 +112,7 @@
       </div>
       <div class="features__items features__item-style">
         <div class="features__item">
-          <h2 class="features__item-heading">Небольшая площадь</h2>
+          <h2 class="features__item-heading">Небольшая<br> площадь</h2>
           <span class="features__item-num">№3</span>
           <p class="features__item-subheading">Все интересные места находятся очень близко</p>
         </div>
@@ -139,28 +139,59 @@
       </div>
       <form class="presentation__form hide" action="https://echo.htmlacademy.ru" method="post" id="formChoice">
         <fieldset>
-          <legend>Даты заезда и выезда</legend>
-          <ul class="presentation__form__item">
+          <legend class="visually-hidden">Даты заезда и выезда</legend>
+          <ul class="presentation__form__items">
             <li class="presentation__form__item">
               <label class="form__label" for="appointment-date">Дата заезда:</label>
-              <input class="form__input" id="appointment-date" type="data" name="date-in" value="24 апреля 2017">
+              <input class="form__input" id="appointment-date" type="text" name="date-in" value="24 апреля 2017"
+                placeholder="07/04/2000">
+              <span class="appointment-calendar" aria-hidden="true">
+                <svg class="appointment__logo">
+                  <use xlink:href="#calendar">
+                  </use>
+                </svg>
+              </span>
             </li>
-            <li>
+            <li class="presentation__form__item">
               <label class="form__label" for="appointment-data-out">Дата выезда:</label>
-              <input class="form__input" id="appointment-data-out" type="data" name="data-out" value="4 июля 2017">
+              <input class="form__input" id="appointment-data-out" type="text" name="data-out" value="4 июля 2017">
+              <span class="appointment-calendar" aria-hidden="true">
+                <svg class="appointment__logo">
+                  <use xlink:href="#calendar">
+                  </use>
+                </svg>
+              </span>
             </li>
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Выбор количества человек</legend>
-          <ul class="presentation__form__item">
-            <li class="presentation__form__item presentation__form__item--inner">
-              <label class="form__label" for="appointment-adult">Взрослые:</label>
-              <input class="form__input" id="appointment-adult" type="number" name="adult" value="2">
+          <legend class="visually-hidden">Выбор количества человек</legend>
+          <ul class="presentation__form__items presentation__form__items--inner"">
+                        <li class=" presentation__form__item">
+            <label class="form__label" for="appointment-adult">Взрослые:</label>
+            <ul class="form__count__list">
+              <li class="form__count"><button class="count" type="button" aria-label="remove a quantity of adult"
+                  id="minus-adult">-</button></li>
+              <li class="form__count"><input class="form__input" id="appointment-adult" type="text" name="adult"
+                  value="0">
+              </li>
+              <li class="form__count"><button class="count" id="plus-adult" type="button"
+                  aria-label="add a quantity of adult">+</button></li>
+            </ul>
             </li>
-            <li class="presentation__form__item  presentation__form__item--inner">
+            <li class="presentation__form__item">
               <label class="form__label" for="appointment-children">Дети:</label>
-              <input class="form__input" id="appointment-children" type="number" name="children" value="0">
+              <ul class="form__count__list">
+                <li class="form__count">
+                  <button class="count" type="button" aria-label="remove a mount of children"
+                    id="minus-children">-</button>
+                </li>
+                <li class="form__count">
+                  <input class="form__input" id="appointment-children" type="text" name="children" value="0">
+                </li>
+                <li class="form__count"><button class="count" type="button" aria-label="add a mount of children"
+                    id="plus-children">+</button></li>
+              </ul>
             </li>
           </ul>
         </fieldset>
@@ -209,7 +240,30 @@
           </a>
         </div>
       </div>
-    </footer> <svg style="display: none;">
+    </footer>
+    <section class="modal" tabindex="-1" role="dialog">
+      <div class="modal__wrapper" role="document">
+        <button type="button" class="close-btn" aria-label="close">
+          <svg class="close" aria-hidden="true">
+            <use xlink:href="#cross">
+            </use>
+          </svg>
+        </button>
+        <div class="modal__block__inner">
+          <div class="modal__block__header">
+            <h5 class="modal__title">Name of hotel</h5>
+          </div>
+          <div class="modal__block__body">
+            <img class="modal__image" src="assets/images/hotels/hotel-picture-small-1.jpg" alt="Amara Resort & Spa">
+            <p>Picture of the hotel </p>
+          </div>
+          <div class="modal__block__footer">
+            <button type="button">Order</button>
+            <button type="button" id="modal-close">Close</button>
+          </div>
+        </div>
+      </div>
+    </section> <svg style="display: none;">
       <symbol id="house" width="75" height="72" viewBox="0 0 75 72">
         <g>
           <path d="M29.656 65.033h16V41.21h-16v23.823zm2.937-20.899h10.125V62.11H32.593V44.134z" />
@@ -302,9 +356,16 @@
           <path fill="#231F20" d="M5.5 0L0 10h11z" />
         </g>
       </symbol>
+      <symbol id="cross" width="15" height="15" viewBox="0 0 32 32">
+        <g>
+          <path
+            d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z">
+          </path>
+        </g>
+      </symbol>
     </svg>
   </div>
-  <script src="assets/js/app.js"></script>
+  <script src="assets/js/app.min.js"></script>
 </body>
 
 </html>

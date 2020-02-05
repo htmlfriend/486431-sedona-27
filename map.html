@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 
 <head>
@@ -15,11 +15,11 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 
-<body>
+<body class="">
     <div class="container">
         <header class="header">
             <nav class="header__menu">
-                <a href="index.html" aria-label="logo" class="header__logo">
+                <a href="index.html" aria-label="logo" tabindex="-1" class="header__logo">
                     <img class="header__menu-logo" src="../../assets/images/favicon/logo-full.png" width="140"
                         height="71" alt="Logo">
                 </a>
@@ -38,7 +38,7 @@
                     </li>
                 </ul>
             </nav>
-        </header> <iframe></iframe>
+        </header> <img src="../../assets/images/map/map-small.jpg" alt="Все интересные места находятся очень близко">
         <footer class="footer">
             <div class="footer__container">
                 <div class="footer__contact">
@@ -54,7 +54,6 @@
                             </use>
                         </svg>
                     </a>
-
                     <a href="#" class="footer__social-link" aria-label="мы в фейсбуке">
                         <svg class="footer__social-icon footer__social-icon__facebook">
                             <use xlink:href="#facebook">
@@ -172,9 +171,16 @@
                     <path fill="#231F20" d="M5.5 0L0 10h11z" />
                 </g>
             </symbol>
+            <symbol id="cross" width="15" height="15" viewBox="0 0 32 32">
+                <g>
+                    <path
+                        d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z">
+                    </path>
+                </g>
+            </symbol>
         </svg>
     </div>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/app.min.js"></script>
 </body>
 
 </html>
