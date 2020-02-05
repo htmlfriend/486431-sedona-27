@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 
 <head>
@@ -15,11 +15,11 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 
-<body>
-    <div class="container">
+<body class="">
+    <div class="container container-inner">
         <header class="header">
             <nav class="header__menu">
-                <a href="index.html" aria-label="logo" class="header__logo">
+                <a href="index.html" aria-label="logo" tabindex="-1" class="header__logo">
                     <img class="header__menu-logo" src="../../assets/images/favicon/logo-full.png" width="140"
                         height="71" alt="Logo">
                 </a>
@@ -39,140 +39,144 @@
                 </ul>
             </nav>
         </header>
-        <form method="get" action="https://echo.htmlacademy.ru">
-            <h2 class="visually-hidden">Выбор удобств</h2>
-            <fieldset>
-                <legend>Инфраструктура:</legend>
-                <ul>
-                    <li>
-                        <label for="pool-availlable">Бассейн</label>
-                        <input id="pool-availlable" type="checkbox" name="pool" value="pool">
-                    </li>
-                    <li>
-                        <label for="parking-availlable">Парковка</label>
-                        <input id="parking-availlable" type="checkbox" name="parking" value="parking">
-                    </li>
-                    <li>
-                        <label for="wifi-availlable">Wi-Fi</label>
-                        <input id="wifi-availlable" type="checkbox" name="wifi" value="wifi">
-                    </li>
-                </ul>
-            </fieldset>
-            <fieldset>
-                <legend>Тип жилья:</legend>
-                <h2 class="visually-hidden">Выбор проживания</h2>
-                <ul>
-                    <li>
-                        <label for="hotel-choice">Гостиница</label>
-                        <input id="hotel-choice" type="checkbox" name="hotel" value="hotels">
-                    </li>
-                    <li>
-                        <label for="motel-choice">Мотель</label>
-                        <input id="motel-choice" type="checkbox" name="motel" value="motel">
-                    </li>
-                    <li>
-                        <label for="appartment-choice">Апартаменты</label>
-                        <input id="appartment-choice" type="checkbox" name="appartment" value="appartment">
-                    </li>
-                </ul>
-            </fieldset>
-            <fieldset>
-                <legend>Стоимость в сутки (Р):</legend>
-                <h2 class="visually-hidden">Выбор стоимость</h2>
-                <div class="range__block">
-                    <table>
-                        <tr>
-                            <td>от 0</td>
-                            <td>До 3000</td>
-                        </tr>
-                    </table>
-                </div>
-                <input type="range" name="cost" id="cost" min="0" max="3000" step="1">
-            </fieldset>
-            <button type="submit">Показать</button>
-        </form>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Найдено: 3</th>
-                    <th>Сортировка:</th>
-                    <th>По цене</th>
-                    <th>По типу</th>
-                    <th>По рейтингу</th>
-                    <th><button>top</button><button>bottom</button></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <img src="../../assets/images/hotels/hotel-picture-full-1.jpg" width="135" height="90"
-                            alt="amara resort">
-                    </td>
-                    <td colspan="4">
-                        <div class="hotel__block">
-                            <h3 class="hotel__block-title">Amara Resort & Spa</h3>
-                            <div class="hotel__block-desc">
-                                <p class="hotel__type">Гостиница</p>
-                                <p class="hotel__price">От 4000 Р.</p>
-                            </div>
-                            <div class="hotel__block-button">
-                                <button>Подробнее</button>
-                                <button>Забронировать</button>
-                            </div>
+        <main>
+            <section class="sort">
+                <form method="get" action="https://echo.htmlacademy.ru">
+                    <h2 class="visually-hidden">Выбор удобств</h2>
+                    <fieldset>
+                        <legend>Инфраструктура:</legend>
+                        <ul>
+                            <li>
+                                <label for="pool-availlable">Бассейн</label>
+                                <input id="pool-availlable" type="checkbox" name="pool" value="pool">
+                            </li>
+                            <li>
+                                <label for="parking-availlable">Парковка</label>
+                                <input id="parking-availlable" type="checkbox" name="parking" value="parking">
+                            </li>
+                            <li>
+                                <label for="wifi-availlable">Wi-Fi</label>
+                                <input id="wifi-availlable" type="checkbox" name="wifi" value="wifi">
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Тип жилья:</legend>
+                        <h2 class="visually-hidden">Выбор проживания</h2>
+                        <ul>
+                            <li>
+                                <label for="hotel-choice">Гостиница</label>
+                                <input id="hotel-choice" type="checkbox" name="hotel" value="hotels">
+                            </li>
+                            <li>
+                                <label for="motel-choice">Мотель</label>
+                                <input id="motel-choice" type="checkbox" name="motel" value="motel">
+                            </li>
+                            <li>
+                                <label for="appartment-choice">Апартаменты</label>
+                                <input id="appartment-choice" type="checkbox" name="appartment" value="appartment">
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Стоимость в сутки (Р):</legend>
+                        <h2 class="visually-hidden">Выбор стоимость</h2>
+                        <div class="range__block">
+                            <table>
+                                <tr>
+                                    <td>от 0</td>
+                                    <td>До 3000</td>
+                                </tr>
+                            </table>
                         </div>
-                    </td>
-                    <td>
-                        <div class="starts">
-                            <img src="#" alt="start">
-                            <img src="#" alt="range"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="../../assets/images/hotels/hotel-picture-full-2.jpg" width="135" height="90"
-                            alt="desert quail inn">
-                    </td>
-                    <td colspan="4">
-                        <div class="hotel__block">
-                            <h3 class="hotel__block-title">Desert Quail Inn</h3>
-                            <div class="hotel__block-desc">
-                                <p class="hotel__type">Мотель</p>
-                                <p class="hotel__price">От 3000 Р.</p>
+                        <input type="range" name="cost" id="cost" min="0" max="3000" step="1">
+                    </fieldset>
+                    <button type="submit">Показать</button>
+                </form>
+            </section>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Найдено: 3</th>
+                        <th>Сортировка:</th>
+                        <th>По цене</th>
+                        <th>По типу</th>
+                        <th>По рейтингу</th>
+                        <th><button>top</button><button>bottom</button></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="../../assets/images/hotels/hotel-picture-full-1.jpg" width="135" height="90"
+                                alt="amara resort">
+                        </td>
+                        <td colspan="4">
+                            <div class="hotel__block">
+                                <h3 class="hotel__block-title">Amara Resort & Spa</h3>
+                                <div class="hotel__block-desc">
+                                    <p class="hotel__type">Гостиница</p>
+                                    <p class="hotel__price">От 4000 Р.</p>
+                                </div>
+                                <div class="hotel__block-button">
+                                    <button id="popup">Подробнее</button>
+                                    <button>Забронировать</button>
+                                </div>
                             </div>
-                            <div class="hotel__block-button">
-                                <button>Подробнее</button>
-                                <button>Забронировать</button>
+                        </td>
+                        <td>
+                            <div class="starts">
+                                <img src="#" alt="start">
+                                <img src="#" alt="range"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../../assets/images/hotels/hotel-picture-full-2.jpg" width="135" height="90"
+                                alt="desert quail inn">
+                        </td>
+                        <td colspan="4">
+                            <div class="hotel__block">
+                                <h3 class="hotel__block-title">Desert Quail Inn</h3>
+                                <div class="hotel__block-desc">
+                                    <p class="hotel__type">Мотель</p>
+                                    <p class="hotel__price">От 3000 Р.</p>
+                                </div>
+                                <div class="hotel__block-button">
+                                    <a href="#">Подробнее</a>
+                                    <button type="button" id="popup">Забронировать</button>
+                                </div>
                             </div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="starts"><img src="#" alt="start"><img src="#" alt="range"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="../../assets/images/hotels/hotel-picture-full-3.jpg" width="135" height="90"
-                            alt="villas at poco diablo">
-                    </td>
-                    <td colspan="4">
-                        <div class="hotel__block">
-                            <h3 class="hotel__block-title">Villas at Poco Diablo</h3>
-                            <div class="hotel__block-desc">
-                                <p class="hotel__type">Апартаменты</p>
-                                <p class="hotel__price">От 2000 Р.</p>
+                        </td>
+                        <td>
+                            <div class="starts"><img src="#" alt="start"><img src="#" alt="range"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../../assets/images/hotels/hotel-picture-full-3.jpg" width="135" height="90"
+                                alt="villas at poco diablo">
+                        </td>
+                        <td colspan="4">
+                            <div class="hotel__block">
+                                <h3 class="hotel__block-title">Villas at Poco Diablo</h3>
+                                <div class="hotel__block-desc">
+                                    <p class="hotel__type">Апартаменты</p>
+                                    <p class="hotel__price">От 2000 Р.</p>
+                                </div>
+                                <div class="hotel__block-button">
+                                    <button>Подробнее</button>
+                                    <button id="popup">Забронировать</button>
+                                </div>
                             </div>
-                            <div class="hotel__block-button">
-                                <button>Подробнее</button>
-                                <button>Забронировать</button>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="starts"><img src="#" alt="start"><img src="#" alt="range"></div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                        </td>
+                        <td>
+                            <div class="starts"><img src="#" alt="start"><img src="#" alt="range"></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
         <footer class="footer">
             <div class="footer__container">
                 <div class="footer__contact">
@@ -183,21 +187,18 @@
                 </div>
                 <div class="footer__social">
                     <a href="#" class="footer__social-link" aria-label="мы в твитере">
-
                         <svg class="footer__social-icon footer__social-icon__tw">
                             <use xlink:href="#tw">
                             </use>
                         </svg>
                     </a>
                     <a href="#" class="footer__social-link" aria-label="мы в фейсбуке">
-
                         <svg class="footer__social-icon footer__social-icon__facebook">
                             <use xlink:href="#facebook">
                             </use>
                         </svg>
                     </a>
                     <a href="#" class="footer__social-link" aria-label="мы на ютубе">
-
                         <svg class="footer__social-icon footer__social-icon__youtube">
                             <use xlink:href="#youtube">
                             </use>
@@ -215,7 +216,30 @@
                 </div>
             </div>
         </footer>
-        <svg style="display: none;">
+        <section class="modal" tabindex="-1" role="dialog">
+            <div class="modal__wrapper" role="document">
+                <button type="button" class="close-btn" aria-label="close">
+                    <svg class="close" aria-hidden="true">
+                        <use xlink:href="#cross">
+                        </use>
+                    </svg>
+                </button>
+                <div class="modal__block__inner">
+                    <div class="modal__block__header">
+                        <h5 class="modal__title">Name of hotel</h5>
+                    </div>
+                    <div class="modal__block__body">
+                        <img class="modal__image" src="assets/images/hotels/hotel-picture-small-1.jpg"
+                            alt="Amara Resort & Spa">
+                        <p>Picture of the hotel </p>
+                    </div>
+                    <div class="modal__block__footer">
+                        <button type="button">Order</button>
+                        <button type="button" id="modal-close">Close</button>
+                    </div>
+                </div>
+            </div>
+        </section> <svg style="display: none;">
             <symbol id="house" width="75" height="72" viewBox="0 0 75 72">
                 <g>
                     <path d="M29.656 65.033h16V41.21h-16v23.823zm2.937-20.899h10.125V62.11H32.593V44.134z" />
@@ -308,9 +332,16 @@
                     <path fill="#231F20" d="M5.5 0L0 10h11z" />
                 </g>
             </symbol>
+            <symbol id="cross" width="15" height="15" viewBox="0 0 32 32">
+                <g>
+                    <path
+                        d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z">
+                    </path>
+                </g>
+            </symbol>
         </svg>
     </div>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/app.min.js"></script>
 </body>
 
 </html>
