@@ -12,7 +12,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <title>hotels</title>
-    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="">
@@ -20,8 +20,8 @@
         <header class="header">
             <nav class="header__menu">
                 <a href="index.html" aria-label="logo" tabindex="-1" class="header__logo">
-                    <img class="header__menu-logo" src="../../assets/images/favicon/logo-full.png" width="140"
-                        height="71" alt="Logo">
+                    <img class="header__menu-logo" src="images/favicon/logo-full.png" width="140" height="71"
+                        alt="Logo">
                 </a>
                 <ul class="header__menu-items">
                     <li class="header__menu-item">
@@ -129,37 +129,37 @@
             </section>
             <section class="result">
                 <table class="result__block">
-                    <thead>
-                        <tr class="result__block__header">
-                            <th class="result__block__title">Найдено: 3</th>
-                            <th colspan="4">
-                                <ul class="result__block__list">
-                                    <li>Сортировка:</li>
-                                    <li>По цене</li>
-                                    <li>По типу</li>
-                                    <li>По рейтингу</li>
-                                </ul>
-                            </th>
-                            <th class="result__block__bottons">
-                                <button class="btn__result">
-                                    <svg class="result__triangle" aria-label="sort by bottom">
-                                        <use xlink:href="#triangle">
-                                        </use>
-                                    </svg>
-                                </button>
-                                <button class="btn__result btn__result-active" href="#">
-                                    <svg class="result__triangle result__triangle-rotate" aria-label="sort by top">
-                                        <use xlink:href="#triangle">
-                                        </use>
-                                    </svg>
-                                </button>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
+                    <tr class="result__block__header">
+                        <th class="result__block__title">Найдено: 3</th>
+                        <th colspan="4">
+                            <ul class="result__block__list">
+                                <li>Сортировка:</li>
+                                <li>По цене</li>
+                                <li>По типу</li>
+                                <li>По рейтингу</li>
+                            </ul>
+                        </th>
+                        <th class="result__block__bottons">
+                            <button class="btn__result">
+                                <svg class="result__triangle" aria-label="sort by bottom">
+                                    <use xlink:href="#triangle">
+                                    </use>
+                                </svg>
+                            </button>
+                            <button class="btn__result btn__result-active" href="#">
+                                <svg class="result__triangle result__triangle-rotate" aria-label="sort by top">
+                                    <use xlink:href="#triangle">
+                                    </use>
+                                </svg>
+                            </button>
+                        </th>
+                    </tr>
+                </table>
+                <div class="table__result__wrapper">
+                    <table class="result__body">
                         <tr class="result__row">
                             <td class="result__img">
-                                <img src="../../assets/images/hotels/hotel-picture-full-1.jpg" width="135" height="90"
+                                <img src="images/hotels/hotel-picture-full-1.jpg" width="135" height="90"
                                     alt="amara resort">
                             </td>
                             <td colspan="4" class="result__hotel">
@@ -200,7 +200,117 @@
                         </tr>
                         <tr class="result__row">
                             <td class="result__img">
-                                <img src="../../assets/images/hotels/hotel-picture-full-2.jpg" width="135" height="90"
+                                <img src="images/hotels/hotel-picture-full-2.jpg" width="135" height="90"
+                                    alt="desert quail inn">
+                            </td>
+                            <td colspan="4" class="result__hotel">
+                                <div class="hotel__block">
+                                    <h3 class="hotel__block-title">Desert Quail Inn</h3>
+                                    <div class="hotel__block__desc">
+                                        <p class="hotel__type">Мотель</p>
+                                        <p class="hotel__price">От 3000 Р.</p>
+                                    </div>
+                                    <div class="hotel__block__buttons">
+                                        <a class="btn btn--about" href="about.html" id="popup">Подробнее</a>
+                                        <button class="btn presentation__intro-btn  btn--order" type="button"
+                                            id="popup">Забронировать</button
+                                            class="btn presentation__intro-btn  btn--order">
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="result-range">
+                                <div class="starts">
+                                    <svg class="result__star">
+                                        <use xlink:href="#star">
+                                        </use>
+                                    </svg>
+                                    <svg class="result__star">
+                                        <use xlink:href="#star">
+                                        </use>
+                                    </svg>
+                                    <svg class="result__star">
+                                        <use xlink:href="#star">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="result__row">
+                            <td class="result__img">
+                                <img src="images/hotels/hotel-picture-full-3.jpg" width="135" height="90"
+                                    alt="villas at poco diablo">
+                            </td>
+                            <td colspan="4" class="result__hotel">
+                                <div class="hotel__block">
+                                    <h3 class="hotel__block-title">Villas at Poco Diablo</h3>
+                                    <div class="hotel__block__desc">
+                                        <p class="hotel__type">Апартаменты</p>
+                                        <p class="hotel__price">От 2000 Р.</p>
+                                    </div>
+                                    <div class="hotel__block__buttons">
+                                        <a class="btn btn--about">Подробнее</a>
+                                        <button class="btn presentation__intro-btn  btn--order"
+                                            id="popup">Забронировать</button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="result-range">
+                                <div class="starts">
+                                    <svg class="result__star">
+                                        <use xlink:href="#star">
+                                        </use>
+                                    </svg>
+                                    <svg class="result__star">
+                                        <use xlink:href="#star">
+                                        </use>
+                                    </svg>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="result__row">
+                            <td class="result__img">
+                                <img src="images/hotels/hotel-picture-full-1.jpg" width="135" height="90"
+                                    alt="amara resort">
+                            </td>
+                            <td colspan="4" class="result__hotel">
+                                <div class="hotel__block">
+                                    <h3 class="hotel__block-title">Amara Resort & Spa</h3>
+                                    <div class="hotel__block__desc">
+                                        <p class="hotel__type">Гостиница</p>
+                                        <p class="hotel__price">От 4000 Р.</p>
+                                    </div>
+                                    <div class="hotel__block__buttons">
+                                        <a class="btn btn--about" href="about.html" id="popup">Подробнее</a>
+                                        <button class="btn presentation__intro-btn  btn--order"
+                                            type="button">Забронировать</button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="result-range">
+                                <div class="starts">
+                                    <svg class="result__star">
+                                        <use xlink:href="#star">
+                                        </use>
+                                    </svg>
+                                    <svg class="result__star">
+                                        <use xlink:href="#star">
+                                        </use>
+                                    </svg>
+                                    <svg class="result__star">
+                                        <use xlink:href="#star">
+                                        </use>
+                                    </svg>
+                                    <svg class="result__star">
+                                        <use xlink:href="#star">
+                                        </use>
+                                    </svg>
+                                    </svg>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="result__row">
+                            <td class="result__img">
+                                <img src="images/hotels/hotel-picture-full-2.jpg" width="135" height="90"
                                     alt="desert quail inn">
                             </td>
                             <td colspan="4" class="result__hotel">
@@ -267,8 +377,8 @@
                                 </div>
                             </td>
                         </tr>
-                    </tbody>
-                </table>
+                    </table>
+                </div>
             </section>
         </main>
         <footer class="footer">
@@ -323,7 +433,7 @@
                         <h5 class="modal__title">Name of hotel</h5>
                     </div>
                     <div class="modal__block__body">
-                        <img class="modal__image" src="assets/images/hotels/hotel-picture-small-1.jpg"
+                        <img class="modal__image" src="images/hotels/hotel-picture-small-1.jpg"
                             alt="Amara Resort & Spa">
                         <p>Picture of the hotel </p>
                     </div>
@@ -474,7 +584,7 @@
             </symbol>
         </svg>
     </div>
-    <script src="assets/js/app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
