@@ -41,141 +41,235 @@
         </header>
         <main>
             <section class="sort">
-                <form method="get" action="https://echo.htmlacademy.ru">
+                <form class="sort__form" method="get" action="https://echo.htmlacademy.ru">
                     <h2 class="visually-hidden">Выбор удобств</h2>
-                    <fieldset>
-                        <legend>Инфраструктура:</legend>
-                        <ul>
-                            <li>
-                                <label for="pool-availlable">Бассейн</label>
+                    <fieldset class="sort__form__list sort__form__list-position">
+                        <legend class="sort__form__title">Инфраструктура:</legend>
+                        <ul class="sort__facility__list">
+                            <li class="sort__facility__item">
+                                <label for="pool-availlable">Бассейн
+                                    <svg class="sort__checkbox">
+                                        <use xlink:href="#checkbox-on">
+                                        </use>
+                                    </svg>
+                                </label>
                                 <input id="pool-availlable" type="checkbox" name="pool" value="pool">
                             </li>
-                            <li>
-                                <label for="parking-availlable">Парковка</label>
+                            <li class="sort__facility__item">
+                                <label for="parking-availlable">Парковка
+                                    <svg class="sort__checkbox">
+                                        <use xlink:href="#checkbox-default">
+                                        </use>
+                                    </svg>
+                                </label>
                                 <input id="parking-availlable" type="checkbox" name="parking" value="parking">
                             </li>
-                            <li>
-                                <label for="wifi-availlable">Wi-Fi</label>
+                            <li class="sort__facility__item">
+                                <label for="wifi-availlable">Wi-Fi
+                                    <svg class="sort__checkbox">
+                                        <use xlink:href="#checkbox-default">
+                                        </use>
+                                    </svg>
+                                </label>
                                 <input id="wifi-availlable" type="checkbox" name="wifi" value="wifi">
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset>
-                        <legend>Тип жилья:</legend>
+                    <fieldset class="sort__form__list sort__form__list-position">
+                        <legend class="sort__form__title">Тип жилья:</legend>
                         <h2 class="visually-hidden">Выбор проживания</h2>
-                        <ul>
-                            <li>
-                                <label for="hotel-choice">Гостиница</label>
+                        <ul class="sort__facility__list">
+                            <li class="sort__facility__item">
+                                <label for="hotel-choice">Гостиница
+                                    <svg class="sort__checkbox">
+                                        <use xlink:href="#checkbox-on">
+                                        </use>
+                                    </svg>
+                                </label>
                                 <input id="hotel-choice" type="checkbox" name="hotel" value="hotels">
                             </li>
-                            <li>
-                                <label for="motel-choice">Мотель</label>
+                            <li class="sort__facility__item">
+                                <label for="motel-choice">Мотель
+                                    <svg class="sort__checkbox">
+                                        <use xlink:href="#checkbox-on">
+                                        </use>
+                                    </svg>
+                                </label>
                                 <input id="motel-choice" type="checkbox" name="motel" value="motel">
                             </li>
-                            <li>
-                                <label for="appartment-choice">Апартаменты</label>
+                            <li class="sort__facility__item">
+                                <label for="appartment-choice">Апартаменты
+                                    <svg class="sort__checkbox">
+                                        <use xlink:href="#checkbox-on">
+                                        </use>
+                                    </svg>
+                                </label>
                                 <input id="appartment-choice" type="checkbox" name="appartment" value="appartment">
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset>
-                        <legend>Стоимость в сутки (Р):</legend>
-                        <h2 class="visually-hidden">Выбор стоимость</h2>
-                        <div class="range__block">
-                            <table>
-                                <tr>
-                                    <td>от 0</td>
-                                    <td>До 3000</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <input type="range" name="cost" id="cost" min="0" max="3000" step="1">
-                    </fieldset>
-                    <button type="submit">Показать</button>
+                    <div class="sort__form__wrapper">
+                        <fieldset class="sort__form__list sort__form--range">
+                            <legend class="sort__form__title mb-13">Стоимость в сутки (Р):</legend>
+                            <h2 class="visually-hidden">Выбор стоимость</h2>
+                            <div class="range__block">
+                                <table class="sort__form__table">
+                                    <tr>
+                                        <td id="value-from">от 0</td>
+                                        <td id="value-to">До 3000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <input class="sort__form__range" type="range" name="cost" id="cost" min="0" max="3000"
+                                step="1">
+                        </fieldset>
+                        <button class="btn btn-range" type="submit">Показать</button>
+                    </div>
                 </form>
             </section>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Найдено: 3</th>
-                        <th>Сортировка:</th>
-                        <th>По цене</th>
-                        <th>По типу</th>
-                        <th>По рейтингу</th>
-                        <th><button>top</button><button>bottom</button></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <img src="../../assets/images/hotels/hotel-picture-full-1.jpg" width="135" height="90"
-                                alt="amara resort">
-                        </td>
-                        <td colspan="4">
-                            <div class="hotel__block">
-                                <h3 class="hotel__block-title">Amara Resort & Spa</h3>
-                                <div class="hotel__block-desc">
-                                    <p class="hotel__type">Гостиница</p>
-                                    <p class="hotel__price">От 4000 Р.</p>
+            <section class="result">
+                <table class="result__block">
+                    <thead>
+                        <tr class="result__block__header">
+                            <th class="result__block__title">Найдено: 3</th>
+                            <th colspan="4">
+                                <ul class="result__block__list">
+                                    <li>Сортировка:</li>
+                                    <li>По цене</li>
+                                    <li>По типу</li>
+                                    <li>По рейтингу</li>
+                                </ul>
+                            </th>
+                            <th class="result__block__bottons">
+                                <button class="btn__result">
+                                    <svg class="result__triangle" aria-label="sort by bottom">
+                                        <use xlink:href="#triangle">
+                                        </use>
+                                    </svg>
+                                </button>
+                                <button class="btn__result btn__result-active" href="#">
+                                    <svg class="result__triangle result__triangle-rotate" aria-label="sort by top">
+                                        <use xlink:href="#triangle">
+                                        </use>
+                                    </svg>
+                                </button>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="result__row">
+                            <td class="result__img">
+                                <img src="../../assets/images/hotels/hotel-picture-full-1.jpg" width="135" height="90"
+                                    alt="amara resort">
+                            </td>
+                            <td colspan="4" class="result__hotel">
+                                <div class="hotel__block">
+                                    <h3 class="hotel__block-title">Amara Resort & Spa</h3>
+                                    <div class="hotel__block__desc">
+                                        <p class="hotel__type">Гостиница</p>
+                                        <p class="hotel__price">От 4000 Р.</p>
+                                    </div>
+                                    <div class="hotel__block__buttons">
+                                        <a class="btn btn--about" href="about.html" id="popup">Подробнее</a>
+                                        <button class="btn presentation__intro-btn  btn--order"
+                                            type="button">Забронировать</button>
+                                    </div>
                                 </div>
-                                <div class="hotel__block-button">
-                                    <button id="popup">Подробнее</button>
-                                    <button>Забронировать</button>
+                            </td>
+                            <td class="result-range">
+                                <div class="starts">
+                                    <svg class="result__star">
+                                        <use xlink:href="#star">
+                                        </use>
+                                    </svg>
+                                    <svg class="result__star">
+                                        <use xlink:href="#star">
+                                        </use>
+                                    </svg>
+                                    <svg class="result__star">
+                                        <use xlink:href="#star">
+                                        </use>
+                                    </svg>
+                                    <svg class="result__star">
+                                        <use xlink:href="#star">
+                                        </use>
+                                    </svg>
+                                    </svg>
                                 </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="starts">
-                                <img src="#" alt="start">
-                                <img src="#" alt="range"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../../assets/images/hotels/hotel-picture-full-2.jpg" width="135" height="90"
-                                alt="desert quail inn">
-                        </td>
-                        <td colspan="4">
-                            <div class="hotel__block">
-                                <h3 class="hotel__block-title">Desert Quail Inn</h3>
-                                <div class="hotel__block-desc">
-                                    <p class="hotel__type">Мотель</p>
-                                    <p class="hotel__price">От 3000 Р.</p>
+                            </td>
+                        </tr>
+                        <tr class="result__row">
+                            <td class="result__img">
+                                <img src="../../assets/images/hotels/hotel-picture-full-2.jpg" width="135" height="90"
+                                    alt="desert quail inn">
+                            </td>
+                            <td colspan="4" class="result__hotel">
+                                <div class="hotel__block">
+                                    <h3 class="hotel__block-title">Desert Quail Inn</h3>
+                                    <div class="hotel__block__desc">
+                                        <p class="hotel__type">Мотель</p>
+                                        <p class="hotel__price">От 3000 Р.</p>
+                                    </div>
+                                    <div class="hotel__block__buttons">
+                                        <a class="btn btn--about" href="about.html" id="popup">Подробнее</a>
+                                        <button class="btn presentation__intro-btn  btn--order" type="button"
+                                            id="popup">Забронировать</button
+                                            class="btn presentation__intro-btn  btn--order">
+                                    </div>
                                 </div>
-                                <div class="hotel__block-button">
-                                    <a href="#">Подробнее</a>
-                                    <button type="button" id="popup">Забронировать</button>
+                            </td>
+                            <td class="result-range">
+                                <div class="starts">
+                                    <svg class="result__star">
+                                        <use xlink:href="#star">
+                                        </use>
+                                    </svg>
+                                    <svg class="result__star">
+                                        <use xlink:href="#star">
+                                        </use>
+                                    </svg>
+                                    <svg class="result__star">
+                                        <use xlink:href="#star">
+                                        </use>
+                                    </svg>
                                 </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="starts"><img src="#" alt="start"><img src="#" alt="range"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="../../assets/images/hotels/hotel-picture-full-3.jpg" width="135" height="90"
-                                alt="villas at poco diablo">
-                        </td>
-                        <td colspan="4">
-                            <div class="hotel__block">
-                                <h3 class="hotel__block-title">Villas at Poco Diablo</h3>
-                                <div class="hotel__block-desc">
-                                    <p class="hotel__type">Апартаменты</p>
-                                    <p class="hotel__price">От 2000 Р.</p>
+                            </td>
+                        </tr>
+                        <tr class="result__row">
+                            <td class="result__img">
+                                <img src="../../assets/images/hotels/hotel-picture-full-3.jpg" width="135" height="90"
+                                    alt="villas at poco diablo">
+                            </td>
+                            <td colspan="4" class="result__hotel">
+                                <div class="hotel__block">
+                                    <h3 class="hotel__block-title">Villas at Poco Diablo</h3>
+                                    <div class="hotel__block__desc">
+                                        <p class="hotel__type">Апартаменты</p>
+                                        <p class="hotel__price">От 2000 Р.</p>
+                                    </div>
+                                    <div class="hotel__block__buttons">
+                                        <a class="btn btn--about">Подробнее</a>
+                                        <button class="btn presentation__intro-btn  btn--order"
+                                            id="popup">Забронировать</button>
+                                    </div>
                                 </div>
-                                <div class="hotel__block-button">
-                                    <button>Подробнее</button>
-                                    <button id="popup">Забронировать</button>
+                            </td>
+                            <td class="result-range">
+                                <div class="starts">
+                                    <svg class="result__star">
+                                        <use xlink:href="#star">
+                                        </use>
+                                    </svg>
+                                    <svg class="result__star">
+                                        <use xlink:href="#star">
+                                        </use>
+                                    </svg>
                                 </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="starts"><img src="#" alt="start"><img src="#" alt="range"></div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
         </main>
         <footer class="footer">
             <div class="footer__container">
@@ -186,29 +280,29 @@
                     </div>
                 </div>
                 <div class="footer__social">
-                    <a href="#" class="footer__social-link" aria-label="мы в твитере">
-                        <svg class="footer__social-icon footer__social-icon__tw">
+                    <a href="#" class="footer__social-link">
+                        <svg class="footer__social-icon footer__social-icon__tw" aria-label="мы в твитере">
                             <use xlink:href="#tw">
                             </use>
                         </svg>
                     </a>
-                    <a href="#" class="footer__social-link" aria-label="мы в фейсбуке">
-                        <svg class="footer__social-icon footer__social-icon__facebook">
+                    <a href="#" class="footer__social-link">
+                        <svg class="footer__social-icon footer__social-icon__facebook" aria-label="мы в фейсбуке">
                             <use xlink:href="#facebook">
                             </use>
                         </svg>
                     </a>
-                    <a href="#" class="footer__social-link" aria-label="мы на ютубе">
-                        <svg class="footer__social-icon footer__social-icon__youtube">
+                    <a href="#" class="footer__social-link" \>
+                        <svg class="footer__social-icon footer__social-icon__youtube" aria-label="мы на ютубе">
                             <use xlink:href="#youtube">
                             </use>
                         </svg>
                     </a>
                 </div>
                 <div class="footer__copyright">
-                    <a href="#" class="footer__copyright-link" aria-label="Разработано">
+                    <a href="#" class="footer__copyright-link">
                         <span class="footer__copyright-span">Website by</span>
-                        <svg class="footer__copyright-icon">
+                        <svg class="footer__copyright-icon" aria-label="Разработано">
                             <use xlink:href="#htmlacademy">
                             </use>
                         </svg>
@@ -329,7 +423,7 @@
             </symbol>
             <symbol id="triangle" width="11" height="10" viewBox="0 0 11 10">
                 <g>
-                    <path fill="#231F20" d="M5.5 0L0 10h11z" />
+                    <path d="M5.5 0L0 10h11z" />
                 </g>
             </symbol>
             <symbol id="cross" width="15" height="15" viewBox="0 0 32 32">
@@ -339,9 +433,48 @@
                     </path>
                 </g>
             </symbol>
+
+            <symbol id="checkbox-on" width="27" height="23" viewBox="0 0 27 23">
+                <g>
+                    <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
+                    <path
+                        d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
+                </g>
+            </symbol>
+
+            <symbol id="radio-button-default" width="20" height="23" viewBox="0 0 20 23">
+                <g>
+                    <path fill="#ABABAB"
+                        d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"
+                        opacity=".3" />
+                    <circle cx="10" cy="10" r="10" fill="#FFF" />
+                    <circle cx="10" cy="10" r="2" fill="#ABABAB" />
+                </g>
+            </symbol>
+            <symbol id="radio-button-hover" width="20" height="23" viewBox="0 0 20 23">
+                <g>
+                    <path fill="#ABABAB"
+                        d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"
+                        opacity=".3" />
+                    <circle cx="10" cy="10" r="10" fill="#FFF" />
+                    <circle cx="10" cy="10" r="2" fill="#ABABAB" />
+                </g>
+            </symbol>
+            <symbol id="star" width="18" height="17" viewBox="0 0 18 17">
+                <g>
+                    <path fill="#81B3D2"
+                        d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" />
+                </g>
+            </symbol>
+            <symbol id="checkbox-default" width="27" height="23" viewBox="0 0 27 23">
+                <g>
+                    <path
+                        d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z" />
+                </g>
+            </symbol>
         </svg>
     </div>
-    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
