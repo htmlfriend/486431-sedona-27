@@ -1,7 +1,7 @@
 var btnChoice = document.querySelector("#choice");
 if (btnChoice) {
   btnChoice.addEventListener("click", function(event) {
-    event.preventDefault();
+    event.preventDefault(event);
     var choiceForm = document.querySelector("#formChoice");
     closePopup(choiceForm, "hide");
   });
@@ -9,7 +9,7 @@ if (btnChoice) {
     elem.classList.toggle(atrr);
   }
 }
-("use strict");
+"use strict";
 
 var slider = document.querySelector("#cost");
 var output = document.querySelector("#value-to");
