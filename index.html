@@ -11,24 +11,17 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/webapple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="images/web/android-chrome-256x256.png" sizes="256x256">
-    <link rel="icon" type="image/png" href="images/web/android-chrome-192x192.png" sizes="192x192">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/web/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/web/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/web/favicon-16x16.png">
-    <link rel="mask-icon" href="images/web/safari-pinned-tab.svg" color="#7e9ca5">
-    <meta name="msapplication-TileColor" content="#00aba9">
-    <meta name="theme-color" content="#d7d9f1">
     <title>HomePage</title>
-    <link rel="stylesheet" href="css/style.min.css"></head>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
 
 <body class="">
     <div class="container">
         <header class="header">
             <nav class="header__menu">
                 <a href="index.html" aria-label="logo" tabindex="-1" class="header__logo">
-                    <img class="header__menu-logo" src="images/favicon/logo-full.png" width="140" height="71" alt="Logo">
+                    <img class="header__menu-logo" src="images/favicon/logo-full.png" width="140" height="71"
+                        alt="Logo">
                 </a>
                 <ul class="header__menu-items">
                     <li class="header__menu-item">
@@ -45,27 +38,31 @@
                     </li>
                 </ul>
             </nav>
-        </header>    <section class="intro" aria-role="presentation">
+        </header>
+        <section class="intro" aria-role="presentation">
             <div class="intro__wrapper">
                 <div class="intro__text">
-                    <h1 class="intro__text__heading">Седона — небольшой городок в Аризоне,<br>
+                    <h1 class="intro__text-heading">Седона — небольшой городок в Аризоне,<br>
                         заслуживающий большего!
                     </h1>
-                    <p class="intro__text__subheading">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+                    <p class="intro__text-subheading">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+                    </p>
                 </div>
             </div>
-        </section>    <section class="features">
+        </section>
+        <section class="features">
             <div class="features__wrapper">
                 <div class="features__promo">
                     <div class="features__promo__block">
                         <h2 class="features__promo-title">Настоящий городок</h2>
                         <span class="features__promo-num">№1</span>
-                        <p class="features__promo-subtitle">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+                        <p class="features__promo-subtitle">Седона - не аттракцион для туристов, там течет своя жизнь
+                        </p>
                     </div>
                 </div>
                 <div class="features__promo-picture">
-                    <img class="features__promo-img" src="images/features/feature-picture-medium-1.jpg" width="800" height="256"
-                        alt="Мечта всех без исключения романтических натур">
+                    <img class="features__promo-img" src="images/features/feature-picture-medium-1.jpg" width="800"
+                        height="256" alt="Мечта всех без исключения романтических натур">
                 </div>
             </div>
             <div class="features__wrapper">
@@ -86,7 +83,8 @@
                     </svg>
                     <div class="features__item-caption">
                         <h3 class="features__promo-title">Еда</h3>
-                        <p class="features__promo-subtitle">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+                        <p class="features__promo-subtitle">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
+                        </p>
                     </div>
                 </div>
                 <div class="features__promo__block features__promo__block--decoration">
@@ -121,7 +119,7 @@
                     <span class="features__promo-num">№3</span>
                     <p class="features__promo-subtitle">Все интересные места находятся очень близко</p>
                 </div>
-        
+
                 <div class="features__promo__block features__promo__block--decoration feature__bg">
                     <h3 class="features__promo-title">Красивая<br> дорога</h3>
                     <span class="features__promo-num">№4</span>
@@ -133,13 +131,15 @@
                     <p class="features__promo-subtitle">Большинство едет в гранд каньон и толпится там</p>
                 </div>
             </div>
-        </section>    <section class="presentation">
+        </section>
+        <section class="presentation">
             <div class="presentation__intro">
-                <h2 class="presentation__intro__heading">Заинтересовались?</h2>
-                <p class="presentation__intro__subheading">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие
+                <h2 class="presentation__intro-heading">Заинтересовались?</h2>
+                <p class="presentation__intro-subheading">Укажите предполагаемые даты поездки,<br>и мы покажем вам
+                    лучшие
                     предложения гостиниц в седоне
                 </p>
-                <button class="btn presentation__intro__btn" type="button" id="choice">ПОИСК ГОСТИНИЦЫ В седоне</button>
+                <button class="btn presentation__intro-btn" type="button" id="choice">ПОИСК ГОСТИНИЦЫ В седоне</button>
             </div>
             <form class="presentation__form hide" action="https://echo.htmlacademy.ru" method="post" id="formChoice">
                 <fieldset>
@@ -147,8 +147,8 @@
                     <ul class="presentation__form__items">
                         <li class="presentation__form__item">
                             <label class="form__label" for="appointment-date">Дата заезда:</label>
-                            <input class="form__input" id="appointment-date" type="text" name="date-in" value="24 апреля 2017"
-                                placeholder="07/04/2000">
+                            <input class="form__input" id="appointment-date" type="text" name="date-in"
+                                value="24 апреля 2017" placeholder="07/04/2000">
                             <span class="appointment-calendar" aria-hidden="true">
                                 <svg class="appointment__logo">
                                     <use xlink:href="#calendar">
@@ -171,30 +171,31 @@
                 </fieldset>
                 <fieldset>
                     <legend class="visually-hidden">Выбор количества человек</legend>
-                    <ul class="presentation__form__items presentation__form__items--inner"">
+                    <ul class="presentation__form__items presentation__form__items--inner">
                         <li class=" presentation__form__item">
-                        <label class="form__label" for="appointment-adult">Взрослые:</label>
-                        <ul class="form__count__list">
-                            <li class="form__count__item"><button class="count" type="button"
-                                    aria-label="remove a quantity of adult" id="minus-adult">-</button></li>
-                            <li class="form__count__item"><input class="form__input" id="appointment-adult" type="text"
-                                    name="adult" value="0">
-                            </li>
-                            <li class="form__count__item"><button class="count" id="plus-adult" type="button"
-                                    aria-label="add a quantity of adult">+</button></li>
-                        </ul>
+                            <label class="form__label" for="appointment-adult">Взрослые:</label>
+                            <ul class="form__count__list">
+                                <li class="form__count"><button class="count" type="button"
+                                        aria-label="remove a quantity of adult" id="minus-adult">-</button></li>
+                                <li class="form__count"><input class="form__input" id="appointment-adult" type="text"
+                                        name="adult" value="0">
+                                </li>
+                                <li class="form__count"><button class="count" id="plus-adult" type="button"
+                                        aria-label="add a quantity of adult">+</button></li>
+                            </ul>
                         </li>
                         <li class="presentation__form__item">
                             <label class="form__label" for="appointment-children">Дети:</label>
                             <ul class="form__count__list">
-                                <li class="form__count__item">
+                                <li class="form__count">
                                     <button class="count" type="button" aria-label="remove a mount of children"
                                         id="minus-children">-</button>
                                 </li>
-                                <li class="form__count__item">
-                                    <input class="form__input" id="appointment-children" type="text" name="children" value="0">
+                                <li class="form__count">
+                                    <input class="form__input" id="appointment-children" type="text" name="children"
+                                        value="0">
                                 </li>
-                                <li class="form__count__item"><button class="count" type="button"
+                                <li class="form__count"><button class="count" type="button"
                                         aria-label="add a mount of children" id="plus-children">+</button></li>
                             </ul>
                         </li>
@@ -202,11 +203,13 @@
                 </fieldset>
                 <button class="btn" type="submit">Найти</button>
             </form>
-        </section>    <section class="google">
+        </section>
+        <section class="google">
             <h2 class="visually-hidden">Карта города Седона</h2>
             <img class="google__img" src="images/map/map-full.jpg" height="593" width="1200"
                 alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-        </section>    <footer class="footer">
+        </section>
+        <footer class="footer">
             <div class="footer__container">
                 <div class="footer__contact">
                     <div class="footer__contact-block">
@@ -227,7 +230,7 @@
                             </use>
                         </svg>
                     </a>
-                    <a href="#" class="footer__social-link">
+                    <a href="#" class="footer__social-link" \>
                         <svg class="footer__social-icon footer__social-icon__youtube" aria-label="мы на ютубе">
                             <use xlink:href="#youtube">
                             </use>
@@ -244,10 +247,10 @@
                     </a>
                 </div>
             </div>
-        </footer>    <!-- <section class="modal" tabindex="-1" role="dialog" id="modal">
-        
+        </footer>
+        <section class="modal" tabindex="-1" role="dialog">
             <div class="modal__wrapper" role="document">
-                <button type="button" class="modal__btn" aria-label="close">
+                <button type="button" class="close-btn" aria-label="close">
                     <svg class="close" aria-hidden="true">
                         <use xlink:href="#cross">
                         </use>
@@ -258,76 +261,17 @@
                         <h5 class="modal__title">Name of hotel</h5>
                     </div>
                     <div class="modal__block__body">
-                        <img class="modal__image" src="images/hotels/hotel-picture-small-1.jpg" alt="Amara Resort & Spa">
+                        <img class="modal__image" src="images/hotels/hotel-picture-small-1.jpg"
+                            alt="Amara Resort & Spa">
                         <p>Picture of the hotel </p>
                     </div>
                     <div class="modal__block__footer">
-                        <button class="btn btn--small" type="button">Order</button>
-                        <button class="btn presentation__intro__btn  btn--small" type="button">Close</button>
+                        <button type="button">Order</button>
+                        <button type="button" id="modal-close">Close</button>
                     </div>
                 </div>
             </div>
-        </section> -->
-        <!-- <section class="modal">
-            <div class="modal__login" id="modal-login">
-                <form class="modal__form" method="POST" action="https://echo.htmlacademy.ru">
-                    <h2>Hello User</h2>
-                    <div class="form-field">
-                        <label for="login-name">
-                            <input id="login-name" type="text" name="name" placeholder="Name" pattern=".{1,}" required>
-                            <svg>
-                                <use href="#svg-check" />
-                            </svg>
-                        </label>
-                    </div>
-                    <div class="form-field">
-                        <label for="login-mail">
-                            <input id="login-mail" type="text" name="mail" placeholder="E-Mail"
-                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-                            <svg>
-                                <use href="#svg-check" />
-                            </svg>
-                        </label>
-                    </div>
-                    <button type="submit" class="button" id="modal-inner-btn">
-                        <div class="arrow-wrapper">
-                            <span class="arrow"></span>
-                        </div>
-                        <p class="button-text">Order</p>
-                    </button>
-                </form>
-                <div class="finished">
-                    <svg>
-                        <use href="#svg-check" />
-                    </svg>
-                </div>
-            </div>
-        </section>
-        --->
-        <!-- //--- ## SVG SYMBOLS ############# -->
-        <!-- <svg style="display:none;">
-            <symbol id="svg-check" viewBox="0 0 130.2 130.2">
-                <polyline points="100.2,40.2 51.5,88.8 29.8,67.5 " />
-            </symbol>
-        </svg> -->
-        
-        <section class="modal" id="modal">
-            <div class="modal__block">
-                <div class="modal__close" id="modal-close-btn">X</div>
-                <form action="https://echo.htmlacademy.ru" class="login-form" id="myForm">
-                    <h1 class="modal__title">Забронировать</h1>
-                    <label class="modal__label" aria-label="enter your name">
-                        <input class="modal__input" type="text" name="name" pattern=".{1,}" required>
-                        <span class="modal__hint" data-placeholder="Name"></span>
-                    </label>
-                    <label class="modal__label" aria-label="enter your email">
-                        <input class="modal__input" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-                        <span class="modal__hint" data-placeholder="Email"></span>
-                    </label>
-                    <button type="submit" class="btn btn--modal">Отправить заявку</button>
-                </form>
-            </div>
-        </section>    <svg style="display: none;">
+        </section> <svg style="display: none;">
             <symbol id="house" width="75" height="72" viewBox="0 0 75 72">
                 <g>
                     <path d="M29.656 65.033h16V41.21h-16v23.823zm2.937-20.899h10.125V62.11H32.593V44.134z" />
@@ -384,6 +328,13 @@
                         d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
                 </g>
             </symbol>
+            <symbol id="checkbox-on" width="27" height="23" viewBox="0 0 27 23">
+                <g>
+                    <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
+                    <path
+                        d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
+                </g>
+            </symbol>
             <symbol id="radio-button-default" width="20" height="23" viewBox="0 0 20 23">
                 <g>
                     <path fill="#ABABAB"
@@ -420,6 +371,15 @@
                     </path>
                 </g>
             </symbol>
+
+            <symbol id="checkbox-on" width="27" height="23" viewBox="0 0 27 23">
+                <g>
+                    <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
+                    <path
+                        d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
+                </g>
+            </symbol>
+
             <symbol id="radio-button-default" width="20" height="23" viewBox="0 0 20 23">
                 <g>
                     <path fill="#ABABAB"
@@ -444,7 +404,14 @@
                         d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" />
                 </g>
             </symbol>
-        </svg></div>
+            <symbol id="checkbox-default" width="27" height="23" viewBox="0 0 27 23">
+                <g>
+                    <path
+                        d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z" />
+                </g>
+            </symbol>
+        </svg>
+    </div>
     <script src="js/app.js"></script>
 </body>
 
