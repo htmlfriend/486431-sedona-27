@@ -889,7 +889,7 @@ body {
 }
 
 .sort__facility__item input:checked ~ .checkmark {
-    background: url("../../images/parts/checkbox-on.svg");
+    background: url("../images/parts/checkbox-on.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -900,7 +900,7 @@ body {
     left: -38px;
     width: 24px;
     height: 24px;
-    background: url("../../images/parts/checkbox-off.svg");
+    background: url("../images/parts/checkbox-off.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-transition: all 0.3s ease;
@@ -946,7 +946,7 @@ body {
     content: "";
     -webkit-transform: translateY(-40%);
     transform: translateY(-40%);
-    background: url("../../images/parts/radio-button-default.svg") no-repeat;
+    background: url("../images/parts/radio-button-default.svg") no-repeat;
     cursor: pointer;
 }
 
@@ -971,7 +971,7 @@ body {
     width: 22px;
     height: 22px;
     border-radius: 100%;
-    background: url("../../images/parts/radio-button-default.svg") no-repeat;
+    background: url("../images/parts/radio-button-default.svg") no-repeat;
     -webkit-appearance: none;
     appearance: none;
     cursor: pointer;
@@ -985,7 +985,7 @@ body {
     width: 22px;
     height: 22px;
     border-radius: 100%;
-    background: url("../../images/parts/radio-button-default.svg") no-repeat;
+    background: url("../images/parts/radio-button-default.svg") no-repeat;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
