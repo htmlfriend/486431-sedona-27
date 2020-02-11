@@ -11,6 +11,15 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="keywords" content="">
     <meta name="description" content="">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/webapple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="images/web/android-chrome-256x256.png" sizes="256x256">
+    <link rel="icon" type="image/png" href="images/web/android-chrome-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/web/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/web/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/web/favicon-16x16.png">
+    <link rel="mask-icon" href="images/web/safari-pinned-tab.svg" color="#7e9ca5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#d7d9f1">
     <title>hotels</title>
     <link rel="stylesheet" href="css/style.min.css"></head>
 
@@ -40,68 +49,50 @@
             <section class="sort">
                 <form class="sort__form" method="get" action="https://echo.htmlacademy.ru">
                     <h2 class="visually-hidden">Результат поиска отелей</h2>
-                    <fieldset class="sort__form__list sort__form__list-position">
+                    <fieldset class="sort__form__list sort__form__list--position">
                         <legend class="sort__form__title">Инфраструктура:</legend>
                         <ul class="sort__facility__list">
                             <li class="sort__facility__item">
-                                <label for="pool-availlable">Бассейн
-                                    <svg class="sort__checkbox">
-                                        <use xlink:href="#checkbox-on">
-                                        </use>
-                                    </svg>
+                                <label class="sort__facility__label">Бассейн
+                                    <input type="checkbox" name="pool" value="pool" checked>
+                                    <span class="checkmark"></span>
                                 </label>
-                                <input id="pool-availlable" type="checkbox" name="pool" value="pool" checked>
                             </li>
                             <li class="sort__facility__item">
-                                <label for="parking-availlable">Парковка
-                                    <svg class="sort__checkbox">
-                                        <use xlink:href="#checkbox-default">
-                                        </use>
-                                    </svg>
+                                <label class="sort__facility__label">Парковка
+                                    <input type="checkbox" name="parking" value="parking">
+                                    <span class="checkmark"></span>
                                 </label>
-                                <input id="parking-availlable" type="checkbox" name="parking" value="parking">
                             </li>
                             <li class="sort__facility__item">
-                                <label for="wifi-availlable">Wi-Fi
-                                    <svg class="sort__checkbox">
-                                        <use xlink:href="#checkbox-default">
-                                        </use>
-                                    </svg>
+                                <label class="sort__facility__label">Wi-Fi
+                                    <input type="checkbox" name="wifi" value="wifi" checked>
+                                    <span class="checkmark"></span>
                                 </label>
-                                <input id="wifi-availlable" type="checkbox" name="wifi" value="wifi">
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset class="sort__form__list sort__form__list-position">
+                    <fieldset class="sort__form__list sort__form__list--position">
                         <legend class="sort__form__title">Тип жилья:</legend>
                         <h2 class="visually-hidden">Выбор проживания</h2>
                         <ul class="sort__facility__list">
                             <li class="sort__facility__item">
-                                <label for="hotel-choice">Гостиница
-                                    <svg class="sort__checkbox">
-                                        <use xlink:href="#checkbox-on">
-                                        </use>
-                                    </svg>
+                                <label class="sort__facility__label">Гостиница
+                                    <input type="checkbox" name="hotel" value="hotels" checked>
+                                    <span class="checkmark"></span>
                                 </label>
-                                <input id="hotel-choice" type="checkbox" name="hotel" value="hotels" checked>
                             </li>
                             <li class="sort__facility__item">
-                                <label for="motel-choice">Мотель
-                                    <svg class="sort__checkbox">
-                                        <use xlink:href="#checkbox-on">
-                                        </use>
-                                    </svg>
+                                <label class="sort__facility__label">Мотель
+                                    <input type="checkbox" name="motel" value="motel" checked>
+                                    <span class="checkmark"></span>
                                 </label>
-                                <input id="motel-choice" type="checkbox" name="motel" value="motel" checked>
                             </li>
                             <li class="sort__facility__item">
-                                <label for="appartment-choice">Апартаменты
-                                    <svg class="sort__checkbox">
-                                        <use xlink:href="#checkbox-on">
-                                        </use>
-                                    </svg>
+                                <label class="sort__facility__label">Апартаменты
+                                    <input type="checkbox" name="appartment" value="appartment" checked>
+                                    <span class="checkmark"></span>
                                 </label>
-                                <input id="appartment-choice" type="checkbox" name="appartment" value="appartment" checked>
                             </li>
                         </ul>
                     </fieldset>
@@ -120,29 +111,29 @@
                             <input class="sort__form__range" type="range" name="cost" id="cost" min="0" max="3000" step="1"
                                 value="800">
                         </fieldset>
-                        <button class="btn btn-range" type="submit">Показать</button>
+                        <button class="btn btn--range" type="submit">Показать</button>
                     </div>
                 </form>
             </section>        <section class="result">
                 <table class="result__block">
                     <tr class="result__block__header">
                         <th class="result__block__title">Найдено: 3</th>
-                        <th colspan="4">
+                        <th>
                             <ul class="result__block__list">
-                                <li><button class="btn--sort btn--sort--active">Сортировка:</button></li>
-                                <li><button class="btn--sort">По цене</button></li>
-                                <li><button class="btn--sort">По типу</button></li>
-                                <li><button class="btn--sort">По рейтингу</button></li>
+                                <li><button class="result__block__btn result__block__btn--active">Сортировка:</button></li>
+                                <li><button class="result__block__btn">По цене</button></li>
+                                <li><button class="result__block__btn">По типу</button></li>
+                                <li><button class="result__block__btn">По рейтингу</button></li>
                             </ul>
                         </th>
                         <th class="result__block__bottons">
-                            <button class="btn__result">
+                            <button class="result__block__triangle">
                                 <svg class="result__triangle" aria-label="sort by bottom">
                                     <use xlink:href="#triangle">
                                     </use>
                                 </svg>
                             </button>
-                            <button class="btn__result btn__result-active" href="#">
+                            <button class="result__block__triangle result__block__triangle--active">
                                 <svg class="result__triangle result__triangle-rotate" aria-label="sort by top">
                                     <use xlink:href="#triangle">
                                     </use>
@@ -151,13 +142,13 @@
                         </th>
                     </tr>
                 </table>
-                <div class="table__result__wrapper">
+                <div class="result__table__wrapper">
                     <table class="result__body">
                         <tr class="result__row">
                             <td class="result__img">
                                 <img src="images/hotels/hotel-picture-full-1.jpg" width="135" height="90" alt="amara resort">
                             </td>
-                            <td colspan="4" class="result__hotel">
+                            <td class="result__hotel">
                                 <div class="hotel__block">
                                     <h3 class="hotel__block-title">Amara Resort & Spa</h3>
                                     <div class="hotel__block__desc">
@@ -165,8 +156,9 @@
                                         <p class="hotel__price">От 4000 Р.</p>
                                     </div>
                                     <div class="hotel__block__buttons">
-                                        <a class="btn btn--small" href="about.html" id="popup">Подробнее</a>
-                                        <button class="btn presentation__intro-btn  btn--small" type="button">Забронировать</button>
+                                        <a class="btn btn--small" href="about.html">Подробнее</a>
+                                        <button class="btn presentation__intro__btn  btn--small btn-handler"
+                                            type="button">Забронировать</button>
                                     </div>
                                 </div>
                             </td>
@@ -196,7 +188,7 @@
                             <td class="result__img">
                                 <img src="images/hotels/hotel-picture-full-2.jpg" width="135" height="90" alt="desert quail inn">
                             </td>
-                            <td colspan="4" class="result__hotel">
+                            <td class="result__hotel">
                                 <div class="hotel__block">
                                     <h3 class="hotel__block-title">Desert Quail Inn</h3>
                                     <div class="hotel__block__desc">
@@ -204,9 +196,9 @@
                                         <p class="hotel__price">От 3000 Р.</p>
                                     </div>
                                     <div class="hotel__block__buttons">
-                                        <a class="btn btn--small" href="about.html" id="popup">Подробнее</a>
-                                        <button class="btn presentation__intro-btn  btn--small" type="button"
-                                            id="popup">Забронировать</button class="btn presentation__intro-btn  btn--order">
+                                        <a class="btn btn--small" href="about.html">Подробнее</a>
+                                        <button class="btn presentation__intro__btn  btn--small btn-handler"
+                                            type="button">Забронировать</button>
                                     </div>
                                 </div>
                             </td>
@@ -232,7 +224,7 @@
                                 <img src="images/hotels/hotel-picture-full-3.jpg" width="135" height="90"
                                     alt="villas at poco diablo">
                             </td>
-                            <td colspan="4" class="result__hotel">
+                            <td class="result__hotel">
                                 <div class="hotel__block">
                                     <h3 class="hotel__block-title">Villas at Poco Diablo</h3>
                                     <div class="hotel__block__desc">
@@ -241,7 +233,7 @@
                                     </div>
                                     <div class="hotel__block__buttons">
                                         <a class="btn btn--small">Подробнее</a>
-                                        <button class="btn presentation__intro-btn  btn--small" id="popup">Забронировать</button>
+                                        <button class="btn presentation__intro__btn  btn--small btn-handler">Забронировать</button>
                                     </div>
                                 </div>
                             </td>
@@ -262,7 +254,7 @@
                             <td class="result__img">
                                 <img src="images/hotels/hotel-picture-full-1.jpg" width="135" height="90" alt="amara resort">
                             </td>
-                            <td colspan="4" class="result__hotel">
+                            <td class="result__hotel">
                                 <div class="hotel__block">
                                     <h3 class="hotel__block-title">Amara Resort & Spa</h3>
                                     <div class="hotel__block__desc">
@@ -270,8 +262,9 @@
                                         <p class="hotel__price">От 4000 Р.</p>
                                     </div>
                                     <div class="hotel__block__buttons">
-                                        <a class="btn btn--small" href="about.html" id="popup">Подробнее</a>
-                                        <button class="btn presentation__intro-btn  btn--small" type="button">Забронировать</button>
+                                        <a class="btn btn--small" href="about.html">Подробнее</a>
+                                        <button class="btn presentation__intro__btn  btn--small btn-handler"
+                                            type="button">Забронировать</button>
                                     </div>
                                 </div>
                             </td>
@@ -301,7 +294,7 @@
                             <td class="result__img">
                                 <img src="images/hotels/hotel-picture-full-2.jpg" width="135" height="90" alt="desert quail inn">
                             </td>
-                            <td colspan="4" class="result__hotel">
+                            <td class="result__hotel">
                                 <div class="hotel__block">
                                     <h3 class="hotel__block-title">Desert Quail Inn</h3>
                                     <div class="hotel__block__desc">
@@ -309,9 +302,9 @@
                                         <p class="hotel__price">От 3000 Р.</p>
                                     </div>
                                     <div class="hotel__block__buttons">
-                                        <a class="btn btn--small" href="about.html" id="popup">Подробнее</a>
-                                        <button class="btn presentation__intro-btn  btn--small" type="button"
-                                            id="popup">Забронировать</button class="btn presentation__intro-btn  btn--order">
+                                        <a class="btn btn--small" href="about.html">Подробнее</a>
+                                        <button class="btn presentation__intro__btn  btn--small" type="button">Забронировать</button
+                                            class="btn presentation__intro__btn  btn--order btn-handler">
                                     </div>
                                 </div>
                             </td>
@@ -337,7 +330,7 @@
                                 <img src="images/hotels/hotel-picture-full-3.jpg" width="135" height="90"
                                     alt="villas at poco diablo">
                             </td>
-                            <td colspan="4" class="result__hotel">
+                            <td class="result__hotel">
                                 <div class="hotel__block">
                                     <h3 class="hotel__block-title">Villas at Poco Diablo</h3>
                                     <div class="hotel__block__desc">
@@ -346,7 +339,7 @@
                                     </div>
                                     <div class="hotel__block__buttons">
                                         <a class="btn btn--small">Подробнее</a>
-                                        <button class="btn presentation__intro-btn  btn--small" id="popup">Забронировать</button>
+                                        <button class="btn presentation__intro__btn  btn--small btn-handler">Забронировать</button>
                                     </div>
                                 </div>
                             </td>
@@ -387,7 +380,7 @@
                             </use>
                         </svg>
                     </a>
-                    <a href="#" class="footer__social-link" \>
+                    <a href="#" class="footer__social-link">
                         <svg class="footer__social-icon footer__social-icon__youtube" aria-label="мы на ютубе">
                             <use xlink:href="#youtube">
                             </use>
@@ -404,9 +397,10 @@
                     </a>
                 </div>
             </div>
-        </footer>    <section class="modal" tabindex="-1" role="dialog">
+        </footer>    <!-- <section class="modal" tabindex="-1" role="dialog" id="modal">
+        
             <div class="modal__wrapper" role="document">
-                <button type="button" class="close-btn" aria-label="close">
+                <button type="button" class="modal__btn" aria-label="close">
                     <svg class="close" aria-hidden="true">
                         <use xlink:href="#cross">
                         </use>
@@ -421,10 +415,70 @@
                         <p>Picture of the hotel </p>
                     </div>
                     <div class="modal__block__footer">
-                        <button type="button">Order</button>
-                        <button type="button" id="modal-close">Close</button>
+                        <button class="btn btn--small" type="button">Order</button>
+                        <button class="btn presentation__intro__btn  btn--small" type="button">Close</button>
                     </div>
                 </div>
+            </div>
+        </section> -->
+        <!-- <section class="modal">
+            <div class="modal__login" id="modal-login">
+                <form class="modal__form" method="POST" action="https://echo.htmlacademy.ru">
+                    <h2>Hello User</h2>
+                    <div class="form-field">
+                        <label for="login-name">
+                            <input id="login-name" type="text" name="name" placeholder="Name" pattern=".{1,}" required>
+                            <svg>
+                                <use href="#svg-check" />
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="form-field">
+                        <label for="login-mail">
+                            <input id="login-mail" type="text" name="mail" placeholder="E-Mail"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                            <svg>
+                                <use href="#svg-check" />
+                            </svg>
+                        </label>
+                    </div>
+                    <button type="submit" class="button" id="modal-inner-btn">
+                        <div class="arrow-wrapper">
+                            <span class="arrow"></span>
+                        </div>
+                        <p class="button-text">Order</p>
+                    </button>
+                </form>
+                <div class="finished">
+                    <svg>
+                        <use href="#svg-check" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        --->
+        <!-- //--- ## SVG SYMBOLS ############# -->
+        <!-- <svg style="display:none;">
+            <symbol id="svg-check" viewBox="0 0 130.2 130.2">
+                <polyline points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+            </symbol>
+        </svg> -->
+        
+        <section class="modal" id="modal">
+            <div class="modal__block">
+                <div class="modal__close" id="modal-close-btn">X</div>
+                <form action="https://echo.htmlacademy.ru" class="login-form" id="myForm">
+                    <h1 class="modal__title">Забронировать</h1>
+                    <label class="modal__label" aria-label="enter your name">
+                        <input class="modal__input" type="text" name="name" pattern=".{1,}" required>
+                        <span class="modal__hint" data-placeholder="Name"></span>
+                    </label>
+                    <label class="modal__label" aria-label="enter your email">
+                        <input class="modal__input" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                        <span class="modal__hint" data-placeholder="Email"></span>
+                    </label>
+                    <button type="submit" class="btn btn--modal">Отправить заявку</button>
+                </form>
             </div>
         </section>    <svg style="display: none;">
             <symbol id="house" width="75" height="72" viewBox="0 0 75 72">
@@ -483,13 +537,6 @@
                         d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
                 </g>
             </symbol>
-            <symbol id="checkbox-on" width="27" height="23" viewBox="0 0 27 23">
-                <g>
-                    <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
-                    <path
-                        d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
-                </g>
-            </symbol>
             <symbol id="radio-button-default" width="20" height="23" viewBox="0 0 20 23">
                 <g>
                     <path fill="#ABABAB"
@@ -526,15 +573,6 @@
                     </path>
                 </g>
             </symbol>
-        
-            <symbol id="checkbox-on" width="27" height="23" viewBox="0 0 27 23">
-                <g>
-                    <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
-                    <path
-                        d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
-                </g>
-            </symbol>
-        
             <symbol id="radio-button-default" width="20" height="23" viewBox="0 0 20 23">
                 <g>
                     <path fill="#ABABAB"
@@ -557,11 +595,6 @@
                 <g>
                     <path fill="#81B3D2"
                         d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" />
-                </g>
-            </symbol>
-            <symbol id="checkbox-default" width="27" height="23" viewBox="0 0 27 23">
-                <g>
-                    <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/>
                 </g>
             </symbol>
         </svg></div>

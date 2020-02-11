@@ -55,3 +55,60 @@ if (minusBtnAdult) {
     fieldAdult.value = parseInt(fieldAdult.value) + 1;
   });
 }
+var orderNow = document.querySelectorAll(".btn-handler");
+var modal = document.querySelector("#modal");
+// var modalInnerBtn = document.querySelector("#modal-inner-btn");
+orderNow.forEach(function(elem) {
+  elem.addEventListener("click", function() {
+    modal.classList.add("active");
+  });
+});
+// $('.button').on('click', function () {
+//     $('.login').addClass('loading').delay(2200).queue(function () {
+//         $(this).addClass('active')
+//     });
+// });
+// modalInnerBtn.addEventListener("click", function(e) {
+//   e.preventDefault();
+//   console.log("click");
+//   var modalLogin = document.querySelector("#modal-login");
+//   modalLogin.classList.toggle("loading");
+// });
+
+var txtb = document.querySelectorAll(".modal__label");
+txtb.forEach(function(elem) {
+  elem.addEventListener("focusin", function() {
+    elem.children[0].classList.add("focus");
+  });
+});
+
+txtb.forEach(function(elem) {
+  elem.addEventListener("focusout", function() {
+    if (elem.children[0].className == "focus" && elem.children[0].value == "") {
+      elem.children[0].classList.remove("focus");
+    }
+  });
+});
+
+var modalCloseBtn = document.querySelector("#modal-close-btn");
+if (modalCloseBtn) {
+  modalCloseBtn.addEventListener("click", function() {
+    modal.classList.remove("active");
+  });
+}
+// $('.txtb input').on('blur', function () {
+//     if ($(this).val() == "")
+//         $(this).removeClass('focus');
+// });
+
+// var x = document.getElementById("myForm");
+// x.addEventListener("focusin", myFocusFunction);
+// x.addEventListener("focusout", myBlurFunction);
+
+// function myFocusFunction() {
+//   document.getElementById("myInput").style.backgroundColor = "yellow";
+// }
+
+// function myBlurFunction() {
+//   document.getElementById("myInput").style.backgroundColor = "";
+// }
