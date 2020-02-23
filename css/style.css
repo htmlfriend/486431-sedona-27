@@ -209,7 +209,7 @@ body {
     padding: 0;
     max-width: 1280px;
     width: 100%;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Roboto", sans-serif;
     font-size: 14px;
     line-height: 1.5;
     color: #000000;
@@ -282,6 +282,7 @@ input[type="radio"].visually-hidden {
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
     outline: none;
+    cursor: pointer;
 }
 
 .btn:focus, .btn:hover {
@@ -704,7 +705,7 @@ input[type="radio"].visually-hidden {
     -webkit-box-align: center;
     align-items: center;
     max-width: 568px;
-    width: 100%;
+    height: 395px;
     margin: 0 auto;
     padding: 55px;
     background: #ffffff;
@@ -728,16 +729,22 @@ input[type="radio"].visually-hidden {
         transform: translate(-50%, -150%);
     }
 
+    20% {
+        opacity: 0;
+        -webkit-transform: translate(-50%, -10%);
+        transform: translate(-50%, -10%);
+    }
+
     50% {
         opacity: 1;
-        -webkit-transform: translate(-50%, -100%);
-        transform: translate(-50%, -100%);
+        -webkit-transform: translate(-50%, -3%);
+        transform: translate(-50%, -3%);
     }
 
     100% {
+        opacity: 1;
         -webkit-transform: translate(-50%, 0);
         transform: translate(-50%, 0);
-        opacity: 1;
     }
 }
 
@@ -748,16 +755,22 @@ input[type="radio"].visually-hidden {
         transform: translate(-50%, -150%);
     }
 
+    20% {
+        opacity: 0;
+        -webkit-transform: translate(-50%, -10%);
+        transform: translate(-50%, -10%);
+    }
+
     50% {
         opacity: 1;
-        -webkit-transform: translate(-50%, -100%);
-        transform: translate(-50%, -100%);
+        -webkit-transform: translate(-50%, -3%);
+        transform: translate(-50%, -3%);
     }
 
     100% {
+        opacity: 1;
         -webkit-transform: translate(-50%, 0);
         transform: translate(-50%, 0);
-        opacity: 1;
     }
 }
 
