@@ -1321,22 +1321,26 @@ input[type="radio"].visually-hidden {
     padding-right: 20px;
     margin: 0;
     text-align: right;
+    list-style: none;
 }
 
-.result__block__triangle {
+.result__block__bottons li {
     display: inline-block;
     vertical-align: middle;
     padding: 10px;
+}
+
+.result__block__bottons li:last-child {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.result__block__triangle {
     text-decoration: none;
     border: none;
     background: none;
     cursor: pointer;
     outline: none;
-}
-
-.result__block__triangle:last-child {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
 }
 
 .result__block__triangle .result__triangle {
