@@ -628,6 +628,12 @@ input[type="radio"].visually-hidden {
     line-height: 1.5;
 }
 
+#myMap {
+    width: 1200px;
+    height: 594px;
+    border: 0;
+}
+
 .presentation {
     position: relative;
     padding-top: 57px;
@@ -939,6 +945,10 @@ input[type="radio"].visually-hidden {
 
 .appointment__logo:active {
     fill: #81b3d2;
+}
+
+.error-message {
+    border: 1px solid red;
 }
 
 .google__map {
@@ -1314,7 +1324,10 @@ input[type="radio"].visually-hidden {
 }
 
 .result__block__triangle {
+    display: inline-block;
+    vertical-align: middle;
     padding: 10px;
+    text-decoration: none;
     border: none;
     background: none;
     cursor: pointer;
