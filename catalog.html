@@ -23,6 +23,7 @@
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="theme-color" content="#d7d9f1">
     <title>hotels</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css"></head>
 
 <body class="">
@@ -119,36 +120,38 @@
                     </div>
                 </form>
             </section>        <section class="result">
-                <div class="result__block">
-                    <h3 class="result__block__header">Найдено: 3</h3>
-                    <div class="result__block__wrapper">
-                        <h5 class="result__block__title">Сортировка:</h5>
-                        <ul class="result__block__list">
-                            <li><a class="result__block__btn result__block__btn--active" href="#">По цене</a></li>
-                            <li><a class="result__block__btn" href="#">По типу</a></li>
-                            <li><a class="result__block__btn" href="#">По рейтингу</a></li>
+                <div class="result__block__head">
+                    <div class="result__block">
+                        <h3 class="result__block__header">Найдено: 3</h3>
+                        <div class="result__block__wrapper">
+                            <h5 class="result__block__title">Сортировка:</h5>
+                            <ul class="result__block__list">
+                                <li><a class="result__block__btn result__block__btn--active" href="#">По цене</a></li>
+                                <li><a class="result__block__btn" href="#">По типу</a></li>
+                                <li><a class="result__block__btn" href="#">По рейтингу</a></li>
+                            </ul>
+                        </div>
+                        <ul class="result__block__bottons">
+                            <li>
+                                <a class="result__block__triangle" href="#">
+                                    <svg class="result__triangle" xmlns="http://www.w3.org/2000/svg" width="11" height="10"
+                                        aria-label="по возрастанию">
+                                        <use xlink:href="#triangle">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="result__block__triangle result__block__triangle--active" href="#">
+                                    <svg class="result__triangle" xmlns="http://www.w3.org/2000/svg" width="11" height="10"
+                                        aria-label="по убыванию">
+                                        <use xlink:href="#triangle">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
                         </ul>
                     </div>
-                    <ul class="result__block__bottons">
-                        <li>
-                            <a class="result__block__triangle" href="#">
-                                <svg class="result__triangle" xmlns="http://www.w3.org/2000/svg" width="11" height="10"
-                                    aria-label="по возрастанию">
-                                    <use xlink:href="#triangle">
-                                    </use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="result__block__triangle result__block__triangle--active" href="#">
-                                <svg class="result__triangle" xmlns="http://www.w3.org/2000/svg" width="11" height="10"
-                                    aria-label="по убыванию">
-                                    <use xlink:href="#triangle">
-                                    </use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
                 <div class="result__table__wrapper">
                     <table class="result__body">
@@ -443,7 +446,7 @@
                     </a>
                 </div>
                 <div class="footer__copyright">
-                    <a href="#" class="footer__copyright-link">
+                    <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__copyright-link">
                         <span class="footer__copyright-span">Website by</span>
                         <svg class="footer__copyright-icon" aria-label="Разработано Логотип HTML academy" width="115"
                             height="41">
