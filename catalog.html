@@ -63,13 +63,13 @@
                             </li>
                             <li class="sort__facility__item">
                                 <label class="sort__facility__label">Парковка
-                                    <input class="visually-hidden" type="checkbox" name="parking" value="parking" disabled>
+                                    <input class="visually-hidden" type="checkbox" name="parking" value="parking">
                                     <span class="checkmark"></span>
                                 </label>
                             </li>
                             <li class="sort__facility__item">
                                 <label class="sort__facility__label">Wi-Fi
-                                    <input class="visually-hidden" type="checkbox" name="wifi" value="wifi" checked>
+                                    <input class="visually-hidden" type="checkbox" name="wifi" value="wifi">
                                     <span class="checkmark"></span>
                                 </label>
                             </li>
@@ -106,13 +106,15 @@
                                 <h2 class="visually-hidden">Выбор стоимость</h2>
                                 <div class="range__group__input">
                                     <label class="min-price">от
-                                        <input type="number" name="min-price" value="0" id="value-from"></label>
+                                        <input type="text" name="min-price" value="0"></label>
                                     <label class="max-price">до
-                                        <input type="number" name="max-price" value="3000" id="value-to"></label>
+                                        <input type="text" name="max-price" value="3000"></label>
                                 </div>
                                 <div class="range__group__controls">
-                                    <input class="sort__form__range" type="range" name="range" id="range" min="0" step="1"
-                                        max="3000" value="2400">
+                                    <div class="sort__form__range"></div>
+                                    <div class="sort__form__bar"></div>
+                                    <div class="sort__form__toggle sort__form__toggle-left"></div>
+                                    <div class="sort__form__toggle sort__form__toggle-right"></div>
                                 </div>
                             </fieldset>
                             <button class="btn btn--range" type="submit">Показать</button>
@@ -161,7 +163,7 @@
                             </td>
                             <td class="result__hotel">
                                 <div class="hotel__block">
-                                    <h3 class="hotel__block-title">Amara Resort & Spa</h3>
+                                    <a class="hotel__block-title" href="#">Amara Resort & Spa</a>
                                     <div class="hotel__block__desc">
                                         <p class="hotel__type">Гостиница</p>
                                         <p class="hotel__price">От 4000 Р.</p>
@@ -211,7 +213,7 @@
                             </td>
                             <td class="result__hotel">
                                 <div class="hotel__block">
-                                    <h3 class="hotel__block-title">Desert Quail Inn</h3>
+                                    <a class="hotel__block-title" href="#">Desert Quail Inn</a>
                                     <div class="hotel__block__desc">
                                         <p class="hotel__type">Мотель</p>
                                         <p class="hotel__price">От 3000 Р.</p>
@@ -254,7 +256,7 @@
                             </td>
                             <td class="result__hotel">
                                 <div class="hotel__block">
-                                    <h3 class="hotel__block-title">Villas at Poco Diablo</h3>
+                                    <a class="hotel__block-title" href="#">Villas at Poco Diablo</a>
                                     <div class="hotel__block__desc">
                                         <p class="hotel__type">Апартаменты</p>
                                         <p class="hotel__price">От 2000 Р.</p>
@@ -290,7 +292,7 @@
                             </td>
                             <td class="result__hotel">
                                 <div class="hotel__block">
-                                    <h3 class="hotel__block-title">Amara Resort & Spa</h3>
+                                    <a class="hotel__block-title" href="#">Amara Resort & Spa</a>
                                     <div class="hotel__block__desc">
                                         <p class="hotel__type">Гостиница</p>
                                         <p class="hotel__price">От 4000 Р.</p>
@@ -338,7 +340,7 @@
                             </td>
                             <td class="result__hotel">
                                 <div class="hotel__block">
-                                    <h3 class="hotel__block-title">Desert Quail Inn</h3>
+                                    <a class="hotel__block-title" href="#">Desert Quail Inn</a>
                                     <div class="hotel__block__desc">
                                         <p class="hotel__type">Мотель</p>
                                         <p class="hotel__price">От 3000 Р.</p>
@@ -381,13 +383,13 @@
                             </td>
                             <td class="result__hotel">
                                 <div class="hotel__block">
-                                    <h3 class="hotel__block-title">Villas at Poco Diablo</h3>
+                                    <a class="hotel__block-title" href="#">Villas at Poco Diablo</a>
                                     <div class="hotel__block__desc">
                                         <p class="hotel__type">Апартаменты</p>
                                         <p class="hotel__price">От 2000 Р.</p>
                                     </div>
                                     <div class="hotel__block__buttons">
-                                        <a class="btn btn--small">Подробнее</a>
+                                        <a class="btn btn--small" href="#">Подробнее</a>
                                         <button class="btn presentation__intro__btn  btn--small btn-handler"
                                             type="button">Забронировать</button>
                                     </div>

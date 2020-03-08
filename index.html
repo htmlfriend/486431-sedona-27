@@ -146,71 +146,74 @@
                 <p class="presentation__intro__subheading">Укажите предполагаемые даты поездки,<br>И мы покажем вам лучшие
                     предложения гостиниц в Седоне
                 </p>
-                <button class="btn presentation__intro__btn" type="button" id="choice">Поиск гостиницы в Седоне</button>
+                <a class="btn presentation__intro__btn" type="button" id="choice" href="#">Поиск гостиницы в Седоне</a>
             </div>
-            <form class="presentation__form" action="https://echo.htmlacademy.ru" method="post" id="formChoice">
-                <fieldset>
-                    <legend class="visually-hidden">Даты заезда и выезда</legend>
-                    <ul class="presentation__form__items">
-                        <li class="presentation__form__item">
-                            <label class="form__label" for="appointment-date">Дата заезда:</label>
-                            <input class="form__input" id="appointment-date" type="text" name="date-in" value="24 апреля 2017"
-                                placeholder="07/04/2000">
-                            <span class="appointment-calendar">
-                                <svg class="appointment__logo" xmlns="http://www.w3.org/2000/svg" width="21" height="22"
-                                    aria-label="Выбрать дату заезда">
-                                    <use xlink:href="#calendar">
-                                    </use>
-                                </svg>
-                            </span>
-                        </li>
-                        <li class="presentation__form__item">
-                            <label class="form__label" for="appointment-data-out">Дата выезда:</label>
-                            <input class="form__input" id="appointment-data-out" type="text" name="data-out"
-                                value="4 июля 2017">
-                            <span class="appointment-calendar">
-                                <svg class="appointment__logo" xmlns="http://www.w3.org/2000/svg" width="21" height="22"
-                                    aria-label="Выбрать дату выезда">
-                                    <use xlink:href="#calendar">
-                                    </use>
-                                </svg>
-                            </span>
-                        </li>
-                    </ul>
-                </fieldset>
-                <fieldset>
-                    <legend class="visually-hidden">Выбор количества человек</legend>
-                    <ul class="presentation__form__items presentation__form__items--inner">
-                        <li class=" presentation__form__item">
-                            <label class="form__label" for="appointment-adult">Взрослые:</label>
-                            <ul class="form__count__list">
-                                <li class="form__count__item"><button class="count" type="button"
-                                        aria-label="remove a quantity of adult" id="minus-adult">-</button></li>
-                                <li class="form__count__item"><input class="form__input" id="appointment-adult" type="text"
-                                        name="adult" value="1">
-                                </li>
-                                <li class="form__count__item"><button class="count" id="plus-adult" type="button"
-                                        aria-label="add a quantity of adults">+</button></li>
-                            </ul>
-                        </li>
-                        <li class="presentation__form__item">
-                            <label class="form__label" for="appointment-children">Дети:</label>
-                            <ul class="form__count__list">
-                                <li class="form__count__item">
-                                    <button class="count" type="button" aria-label="remove a quantity of children"
-                                        id="minus-children">-</button>
-                                </li>
-                                <li class="form__count__item">
-                                    <input class="form__input" id="appointment-children" type="text" name="children" value="0">
-                                </li>
-                                <li class="form__count__item"><button class="count" type="button"
-                                        aria-label="add a mount of children" id="plus-children">+</button></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </fieldset>
-                <button class="btn" type="submit" id="sendBtn">Найти</button>
-            </form>
+            <div class="presentation__intro__wrapper ">
+                <form class="presentation__form" action="https://echo.htmlacademy.ru" method="post" id="formChoice">
+                    <fieldset>
+                        <legend class="visually-hidden">Даты заезда и выезда</legend>
+                        <ul class="presentation__form__items">
+                            <li class="presentation__form__item">
+                                <label class="form__label" for="appointment-date">Дата заезда:</label>
+                                <input class="form__input" id="appointment-date" type="text" name="date-in"
+                                    value="24 апреля 2017" placeholder="07/04/2000">
+                                <span class="appointment-calendar">
+                                    <svg class="appointment__logo" xmlns="http://www.w3.org/2000/svg" width="21" height="22"
+                                        aria-label="Выбрать дату заезда">
+                                        <use xlink:href="#calendar">
+                                        </use>
+                                    </svg>
+                                </span>
+                            </li>
+                            <li class="presentation__form__item">
+                                <label class="form__label" for="appointment-data-out">Дата выезда:</label>
+                                <input class="form__input" id="appointment-data-out" type="text" name="data-out"
+                                    value="4 июля 2017">
+                                <span class="appointment-calendar">
+                                    <svg class="appointment__logo" xmlns="http://www.w3.org/2000/svg" width="21" height="22"
+                                        aria-label="Выбрать дату выезда">
+                                        <use xlink:href="#calendar">
+                                        </use>
+                                    </svg>
+                                </span>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="visually-hidden">Выбор количества человек</legend>
+                        <ul class="presentation__form__items presentation__form__items--inner">
+                            <li class=" presentation__form__item">
+                                <label class="form__label" for="appointment-adult">Взрослые:</label>
+                                <ul class="form__count__list">
+                                    <li class="form__count__item"><button class="count" type="button"
+                                            aria-label="remove a quantity of adult" id="minus-adult">-</button></li>
+                                    <li class="form__count__item"><input class="form__input" id="appointment-adult" type="text"
+                                            name="adult" value="1">
+                                    </li>
+                                    <li class="form__count__item"><button class="count" id="plus-adult" type="button"
+                                            aria-label="add a quantity of adults">+</button></li>
+                                </ul>
+                            </li>
+                            <li class="presentation__form__item">
+                                <label class="form__label" for="appointment-children">Дети:</label>
+                                <ul class="form__count__list">
+                                    <li class="form__count__item">
+                                        <button class="count" type="button" aria-label="remove a quantity of children"
+                                            id="minus-children">-</button>
+                                    </li>
+                                    <li class="form__count__item">
+                                        <input class="form__input" id="appointment-children" type="text" name="children"
+                                            value="0">
+                                    </li>
+                                    <li class="form__count__item"><button class="count" type="button"
+                                            aria-label="add a mount of children" id="plus-children">+</button></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button class="btn" type="submit" id="sendBtn">Найти</button>
+                </form>
+            </div>
         </section>    <section class="google__map">
             <h2 class="visually-hidden">Карта города Седона</h2>
             <iframe class="mymap"
