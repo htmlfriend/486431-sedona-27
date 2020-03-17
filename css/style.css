@@ -1601,8 +1601,9 @@ input[type="radio"].visually-hidden {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #ffffff;
+    min-height: 129px;
     padding: 2.5% 8.4% 2.7% 11%;
+    background: #ffffff;
 }
 
 .footer__container {
@@ -1665,6 +1666,7 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     margin-right: 43px;
     width: 160px;
+    max-height: 48px;
 }
 
 .footer__social-link {
