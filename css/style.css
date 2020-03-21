@@ -1513,6 +1513,7 @@ input[type="radio"].visually-hidden {
     -webkit-box-pack: justify;
     justify-content: space-between;
     width: 258px;
+    min-height: 92px;
 }
 
 .hotel__block .hotel__block-title {
