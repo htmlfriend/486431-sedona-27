@@ -441,7 +441,7 @@ input[type="radio"].visually-hidden {
 
 .intro {
     position: relative;
-    height: 731px;
+    height: 728px;
     background: #a56767;
     background: url("../images/intro/background-photo-small.jpg") no-repeat;
     background-position: 0px 114%;
@@ -473,14 +473,14 @@ input[type="radio"].visually-hidden {
 
 .intro__wrapper::before {
     position: absolute;
-    top: -58px;
+    top: -60px;
     left: 0;
     right: 0;
     z-index: 4;
     content: "";
     display: block;
     width: 100%;
-    height: 59px;
+    height: 61px;
     background: url("../images/intro/polygon.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -1320,7 +1320,7 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;
     -webkit-box-align: center;
     align-items: center;
-    padding: 31px 0;
+    padding: 29px 0 29px 0;
 }
 
 .result__block__wrapper {
